@@ -7,8 +7,8 @@ import {
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import { RootLayout } from "./layout/RootLayout";
-import { NotFound } from "./pages/NotFound";
+import RootLayout from "./layout/RootLayout";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
