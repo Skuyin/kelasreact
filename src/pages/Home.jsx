@@ -1,24 +1,21 @@
 import React from "react";
 import Button from "../components/Button";
 import Hero from "../components/Hero";
+import Products from "../components/Products";
+import Package from "../components/Package";
 
 const Home = () => {
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: "url('/bg-home.svg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Button
-        className="bg-blue-500 text-2xl"
-        title="ini ke facebook"
-        link="https://facebook.com"
-      />
+      <Products />
+      <Package />
     </div>
   );
 };

@@ -20,7 +20,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#FDFAF6] p-4 shadow-lg sticky top-0 z-50">
+    <nav className="bg-white lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <span className="text-black text-xl font-bold">LushJelly</span>

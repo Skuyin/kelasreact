@@ -1,16 +1,34 @@
+import React from "react";
+
 const Hero = () => {
   return (
-    <section className="bg-yellow-200 text-center py-20 px-4">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-5xl font-extrabold text-gray-900">Minuman Jelly</h1>
-        <p className="text-xl mt-4 text-gray-700">
-          Ambil Sendiri, Ambil Sepuasnya
+    <div
+      className="relative w-full h-screen flex flex-col md:flex-row items-center justify-between text-white px-6 md:px-12"
+     
+    >
+      {/* Text Content */}
+      <div className="flex-1 text-center md:text-left">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight text-amber-500">
+          JellyLand
+        </h1>
+        <p className="mt-4 text-lg md:text-xl max-w-xl">
+          Nikmati berbagai varian jelly segar dengan rasa yang menggugah selera.
+          Temukan favoritmu sekarang!
         </p>
-        <button className="mt-6 bg-red-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-red-600 transition">
-          Coba Sekarang
+        <button className="mt-6 px-6 py-3 bg-amber-500 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-amber-600 transition">
+          Jelajahi Sekarang
         </button>
       </div>
-    </section>
+
+      {/* Image Section */}
+      <div className="flex-1 flex justify-center">
+        <img
+          src="./hero.jpg"
+          alt="JellyLand"
+          className="w-full md:max-w-md lg:max-w-lg rounded-lg shadow-lg"
+        />
+      </div>
+    </div>
   );
 };
 
