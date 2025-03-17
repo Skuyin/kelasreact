@@ -1,20 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router";
 
+const menuLinks = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "About Us",
+    path: "/about",
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+  },
+];
+
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="bg-gradient-to-r from-gray-900 to-indigo-800 p-4 rounded-lg shadow-lg">
-      <ul className="flex justify-center space-x-6">
-        <li>
-          <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-white hover:text-blue-300"}>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-white hover:text-blue-300"}>About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-white hover:text-blue-300"}>Contact</NavLink>
-        </li>
-      </ul>
+    <nav className="bg-[#FDFAF6] p-4 shadow-lg sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center">
+          <span className="text-black text-xl font-bold">LushJelly</span>
+        </div>
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-black text-2xl"
+          >
+            {isOpen ? "✖" : "☰"}
+          </button>
+        </div>
+        <ul
+          className={`md:flex space-x-6 md:static absolute top-16 left-0 w-full bg-[#FDFAF6] opa md:bg-transparent md:w-auto flex-col md:flex-row text-center transition-all duration-300 ${
+            isOpen ? "flex" : "hidden"
+          }`}
+        >
+          {menuLinks.map((item, index) => (
+            <li key={index}>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-300 font-bold block py-2"
+                    : "text-black hover:text-yellow-200 block py-2"
+                }
+              >
+                {item.title}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };

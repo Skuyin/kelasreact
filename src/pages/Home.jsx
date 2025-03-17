@@ -1,10 +1,19 @@
 import React from "react";
 import Button from "../components/Button";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <Hero />
+      <Hero />
+      <Hero />
+      <Hero />
+      <Hero />
+      <Hero />
+      <Hero />
+      <Hero />
+      <Hero />
       <Button
         className="bg-blue-500 text-2xl"
         title="ini ke facebook"
