@@ -70,7 +70,7 @@ const Products = () => {
 
   return (
     <div className="py-20 ">
-      <h1 className=" text-4xl md:text-6xl font-bold leading-tight text-amber-500 text-center">
+      <h1 className=" text-4xl md:text-6xl font-bold leading-tight text-white text-center">
         Menu
       </h1>
       <div className="relative  w-full">

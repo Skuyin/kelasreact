@@ -1,19 +1,14 @@
 import React from "react";
-import Button from "../components/Button";
+import VisionAndMission from "../components/about/VisionAndMission";
 
 const About = () => {
   return (
     <div>
       <h1>about</h1>
-      <Button
-        className="bg-purple-500 text-4xl"
-        title="ini ke instagram"
-        link="https://instagram.com"
-      />
+      <VisionAndMission />
+    
     </div>
   );
 };
 
 export default About;
-
-

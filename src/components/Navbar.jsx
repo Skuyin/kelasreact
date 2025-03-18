@@ -11,8 +11,8 @@ const menuLinks = [
     path: "/about",
   },
   {
-    title: "Contact",
-    path: "/contact",
+    title: "Party Info",
+    path: "/party",
   },
 ];
 

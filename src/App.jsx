@@ -6,9 +6,9 @@ import {
 } from "react-router";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import RootLayout from "./layout/RootLayout";
 import NotFound from "./pages/NotFound";
+import Party from "./pages/Party";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,7 +16,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="party" element={<Party />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </>

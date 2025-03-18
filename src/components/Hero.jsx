@@ -8,7 +8,7 @@ const Hero = () => {
     >
       {/* Text Content */}
       <div className="flex-1 text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight text-amber-500">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
           JellyLand
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-xl">
