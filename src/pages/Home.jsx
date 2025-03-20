@@ -18,7 +18,7 @@ const Home = () => {
       <Products />
       <CallToAction
         right={
-          <div className="flex flex-col">
+          <div className="flex flex-col text-white">
             <h1 className="text-7xl">Location</h1>
             <h2 className="text-4xl">Ruko Villa Nusa Indah 2</h2>
             <Button
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
         }
         left={
-          <div className="flex flex-col">
+          <div className="flex flex-col text-white">
             <h1 className="text-8xl">Pesta</h1>
             <h2 className="text-4xl">Biarakan kita andil didalam pesta anda</h2>
             <Button title="Lanjut" link="/party" className="self-end" />

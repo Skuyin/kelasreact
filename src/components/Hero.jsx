@@ -2,12 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div
-      className="relative w-full h-screen flex flex-col md:flex-row items-center justify-between text-white px-6 md:px-12"
-     
-    >
+    <div className="relative w-full h-screen flex flex-col md:flex-row items-center justify-between text-white px-6 md:px-12">
       {/* Text Content */}
-      <div className="flex-1 text-center md:text-left">
+      <div className="flex-1 items-center justify-center lg:ml-20 my-2 md:text-left">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
           JellyLand
         </h1>
